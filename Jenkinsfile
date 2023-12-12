@@ -28,7 +28,7 @@ docker build -t java:v2 .
 
     stage('deploy container') {
       steps {
-        sh 'docker run -it -d -p 8080:9099 --name=java-app java:v2'
+        sh 'docker run -it -d -p 9090:9099 --name=java-app java:v2'
       }
     }
 
