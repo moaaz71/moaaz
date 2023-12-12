@@ -21,7 +21,7 @@ pipeline {
     stage('Docker image') {
       steps {
         sh '''cd /home/moaaz/jenkins_home/workspace/moaaz_master
-docker build -t java:v1 .
+docker build -t java:v2 .
 '''
       }
     }
